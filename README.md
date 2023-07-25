@@ -1,3 +1,10 @@
-# Example_config
+# Setup
+Ensure node is installed and a version of >= 14 is available. In the .chadrc files ensure these variables are installed on the correct path.
 
-This can be used as an example custom config for NvChad, this branch is a minimal one. Do check the feature_full branch if you need all the ease in your config.
+On MacOS this will look like:
+"path/to/node",
+"/Users/userName/.local/share/nvim/mason/bin/language-server",
+
+On Linux figure it out :). guessing that you use linux I'm already confident you are smart enough to do this.
+
+On Windows good luck you probably should just switch to Linux ;).
