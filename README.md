@@ -1,4 +1,6 @@
 # Setup
+This is the custom config. Clone the V.2 branch.
+
 Ensure node is installed and a version of >= 14 is available. In the .chadrc files ensure these variables are installed on the correct path.
 
 On MacOS this will look like:
