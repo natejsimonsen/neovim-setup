@@ -13,18 +13,18 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-NODE_VERSION = tonumber(string.sub(io.popen("node -v"):read(), 2, 3))
+-- NODE_VERSION = tonumber(string.sub(io.popen("node -v"):read(), 2, 3))
 
 NODE_CMD = { "typescript-language-server", "--stdio" }
 
-if NODE_VERSION <= 12 then
-  NODE_CMD = {
-    "/Users/nates/.nvm/versions/node/v16.20.0/bin/node",
-    "/Users/nates/.local/share/nvim/mason/bin/typescript-language-server",
-    "--stdio",
-  }
-end
-
+-- if NODE_VERSION <= 12 then
+--   NODE_CMD = {
+--     "/Users/nates/.nvm/versions/node/v16.20.0/bin/node",
+--     "/Users/nates/.local/share/nvim/mason/bin/typescript-language-server",
+--     "--stdio",
+--   }
+-- end
+--
 lspconfig.tsserver.setup {
   cmd = NODE_CMD,
   on_attach = on_attach,
@@ -33,13 +33,13 @@ lspconfig.tsserver.setup {
 
 NODE_CMD = { "vscode-css-language-server", "--stdio" }
 
-if NODE_VERSION <= 12 then
-  NODE_CMD = {
-    "/Users/nates/.nvm/versions/node/v16.20.0/bin/node",
-    "/Users/nates/.local/share/nvim/mason/bin/vscode-css-language-server",
-    "--stdio",
-  }
-end
+-- if NODE_VERSION <= 12 then
+--   NODE_CMD = {
+--     "/Users/nates/.nvm/versions/node/v16.20.0/bin/node",
+--     "/Users/nates/.local/share/nvim/mason/bin/vscode-css-language-server",
+--     "--stdio",
+--   }
+-- end
 
 lspconfig.cssls.setup {
   cmd = NODE_CMD,

@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "blossom_light",
-  theme_toggle = {"blossom_light", "blossom_light"},
+  theme = "chadracula",
+  theme_toggle = {"chadracula", "chadracula"},
 
   statusline = {
     theme = "default", -- default/vscode/vscode_colored/minimal

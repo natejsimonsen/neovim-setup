@@ -56,6 +56,10 @@ local plugins = {
       }
     end,
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 
   -- To make a plugin not be loaded
   -- {
